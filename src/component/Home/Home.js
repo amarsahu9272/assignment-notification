@@ -4,6 +4,7 @@ import CustomSelect from "../Atoms/customSelect/CustomSelect";
 import { yearArray, monthArray, dateArray } from "../../const";
 import { useRecoilState } from "recoil";
 import { notificationDatas } from "../RecoilState";
+import { useNavigate } from "react-router-dom";
 // import { useSetRecoilState } from "recoil";
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
   const [counter, setCounter] = useState(5);
+  const navigate = useNavigate()
 
   // const setNotifData = useSetRecoilState(notificationDatas);
   const [notifData, setNotifData] = useRecoilState(notificationDatas);
@@ -46,6 +48,7 @@ function Home() {
     setYear("");
     setName("");
     setUrl("");
+    navigate('Notification')
     console.log(userData);
   };
   return (
