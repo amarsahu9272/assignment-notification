@@ -8,7 +8,7 @@ function CustomSelect({ keys, data, handleSelect, defaultOption }) {
       className="select"
       onChange={(e) => handleSelect(e.target.value)}
     >
-      <option key={keys+1} default disabled>
+      <option key={keys+1} selected disabled>
         {defaultOption}
       </option>
       {data.map((ele, i) => (

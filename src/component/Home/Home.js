@@ -55,8 +55,8 @@ function Home() {
     <div className="home">
       <div className="home-p">
         <div className="home-s">
-          <input placeholder="Name" onChange={(e) => handleName(e)} />
-          <input placeholder="URL for image" onChange={(e) => handleURL(e)} />
+          <input className="homeInput" placeholder="Name" onChange={(e) => handleName(e)} />
+          <input className="homeInput" placeholder="URL for image" onChange={(e) => handleURL(e)} />
           <div className="selectWrapper">
             <CustomSelect
               keys={dateArray[0]}
@@ -77,7 +77,7 @@ function Home() {
               defaultOption="Year"
             />
           </div>
-          <button onClick={handleSubmit}>Submit</button>
+          <button className="NotificationBtn" onClick={handleSubmit}>Submit</button>
         </div>
       </div>
     </div>

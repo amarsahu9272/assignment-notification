@@ -56,3 +56,8 @@
 .birthDateInstruction {
     font-size: calc(14rem/16);
 }
+.homeInput{
+    width: 100%;
+    height: 2rem ;
+    padding-left: 1rem;
+}
