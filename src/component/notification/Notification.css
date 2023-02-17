@@ -1,0 +1,48 @@
+.Notification {
+    margin-top: 0.938rem;
+    margin-left: 1.25rem;
+    padding: 1.25rem;
+    background-color: #f5f8fa;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+/* .Notification>h2 {
+    font-size: 1.125rem;
+    font-weight: 800;
+} */
+
+.Notification-p {
+    margin-top: 2rem;
+    /* height: 25vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 400;
+    font-size: small;
+    /* overflow: hidden; */
+}
+
+.Notification-p>div:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.Notification-c {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Notification-s {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .05rem solid gainsboro;
+}

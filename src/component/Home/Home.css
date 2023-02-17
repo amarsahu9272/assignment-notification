@@ -1,0 +1,58 @@
+.home {
+    margin-top: 0.938rem;
+    margin-left: 1.25rem;
+    padding: 1.25rem;
+    background-color: #f5f8fa;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+.home-s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .5rem;
+    width: 20%;
+}
+
+.wrapper {
+    padding: 2rem calc(80rem/16);
+    width: auto
+}
+
+.inputCss {
+    width: calc(450rem/16);
+    margin-bottom: 1rem;
+}
+
+.numberInput {
+    composes: inputCss;
+}
+
+.numberInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.selectWrapper {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.submitBtn {
+    margin-top: 2rem;
+    padding: 0.8rem;
+}
+
+.birthHeading {
+    font-size: calc(15rem/16);
+    font-weight: 700;
+}
+
+.birthDateInstruction {
+    font-size: calc(14rem/16);
+}
